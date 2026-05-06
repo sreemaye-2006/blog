@@ -14,7 +14,7 @@ import {
 import { useForm } from "react-hook-form";
 import { NavLink, useNavigate } from "react-router";
 import { useState } from "react";
-import axios from "axios";
+import axios from "../axiosConfig";
 
 function Register() {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ function Register() {
 
       // ✅ FIXED URL (same backend as login)
       let res = await axios.post(
-        "http://localhost:5000/common-api/common",
+        "/common-api/common",
         userObj
       );
 

@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import axios from "axios";
+import axios from "../axiosConfig";
 
 import { useNavigate } from "react-router";
 
@@ -38,7 +38,7 @@ function WriteArticles() {
       //set loading true
       setLoading(true);
       //make POST req to save new article
-      let res = await axios.post("http://localhost:5000/author-api/article", articleObj, { withCredentials: true });
+      let res = await axios.post("/author-api/article", articleObj);
       //navigate to AuthorArticles
       if (res.status === 201) {
         navigate("../articles");

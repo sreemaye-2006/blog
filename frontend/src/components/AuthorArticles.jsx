@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "../axiosConfig";
 import { useNavigate } from "react-router";
 import { useAuth } from "../store/authStore";
 
@@ -37,7 +37,7 @@ function AuthorArticles() {
         setLoading(true);
 
         let res = await axios.get(
-          `http://localhost:5000/author-api/articles/${user._id}`, 
+          `/author-api/articles/${user._id}`, 
           { withCredentials: true }
         );
 
