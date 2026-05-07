@@ -34,7 +34,7 @@ function Register() {
       setLoading(true);
 
       // ✅ FIXED URL (same backend as login)
-      let res = await axios.post( "https://blog-2-p13k.onrender.com/common-api/common",userObj
+      let res = await axios.post("https://blog-2-p13k.onrender.com/common-api/common",userObj
       );
 
       if (res.status === 201) {

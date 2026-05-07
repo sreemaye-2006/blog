@@ -50,7 +50,7 @@ function ArticleByID() {
 
       try {
         const res = await axios.get(
-          ` https://blog-2-p13k.onrender.com/user-api/article/${id}`,
+          `https://blog-2-p13k.onrender.com/user-api/article/${id}`,
           { withCredentials: true }
         );
 
@@ -84,7 +84,7 @@ function ArticleByID() {
 
     try {
       const res = await axios.patch(
-        " https://blog-2-p13k.onrender.com/author-api/articles",
+        "https://blog-2-p13k.onrender.com/author-api/articles",
         { articleId: article._id, isArticleActive: newStatus },
         { withCredentials: true }
       );
@@ -118,7 +118,7 @@ function ArticleByID() {
     console.log(commentObj);
 
     let res = await axios.put(
-      " https://blog-2-p13k.onrender.com/user-api/comment/",
+      "https://blog-2-p13k.onrender.com/user-api/comment/",
       commentObj,
       { withCredentials: true }
     );

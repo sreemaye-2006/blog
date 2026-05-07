@@ -37,7 +37,7 @@ function AuthorArticles() {
         setLoading(true);
 
         let res = await axios.get(
-          ` https://blog-2-p13k.onrender.com/author-api/articles/${user._id}`, 
+          `https://blog-2-p13k.onrender.com/author-api/articles/${user._id}`, 
           { withCredentials: true }
         );
 
