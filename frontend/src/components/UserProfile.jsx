@@ -28,7 +28,7 @@ function UserProfile() {
       setLoading(true);
       try {
         //read articles of all authors
-        let res=await axios.get("/user-api/articles")
+        let res=await axios.get(" https://blog-2-p13k.onrender.com/user-api/articles")
         //update articles state
         if(res.status===200){
           setArticles(res.data.payload)

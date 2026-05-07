@@ -41,8 +41,8 @@ function AdminProfile() {
     setError(null);
     try {
       const [usersRes, articlesRes] = await Promise.all([
-        axios.get("/admin-api/users", { withCredentials: true }),
-        axios.get("/admin-api/articles", { withCredentials: true }),
+        axios.get(" https://blog-2-p13k.onrender.com/admin-api/users", { withCredentials: true }),
+        axios.get(" https://blog-2-p13k.onrender.com/admin-api/articles", { withCredentials: true }),
       ]);
 
       setUsers(usersRes.data.payload || []);
@@ -69,7 +69,7 @@ function AdminProfile() {
     setUpdatingUserId(user._id);
     try {
       await axios.patch(
-        "/admin-api/users",
+        " https://blog-2-p13k.onrender.com/admin-api/users",
         { userId: user._id, isActive: !user.isActive },
         { withCredentials: true }
       );
