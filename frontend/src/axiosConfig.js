@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+const api = axios.create({
+  baseURL: "https://blog-2-p13k.onrender.com",
   withCredentials: true,
 });
 
-export default axiosInstance;
+export default api;
