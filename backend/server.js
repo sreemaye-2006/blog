@@ -20,6 +20,7 @@ const app = exp();
 app.use(
   cors({
 origin: "https://blog-git-main-sirisreemaye-9168s-projects.vercel.app",
+        "https://blog-two-silk-88.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
