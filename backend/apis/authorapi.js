@@ -7,7 +7,7 @@ export const authorApp=exp.Router()
 //write article(protected)
 authorApp.post("/article", verifytoken("AUTHOR"), async(req,res)=>{
     //get article obj from client
-    const articleObj=req.body
+    const articleObj=req.body   
     //get user from decode token 
     let user=req.user
     console.log(user)
