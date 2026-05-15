@@ -95,7 +95,7 @@ function Register() {
                 <span className="text-sm">Author</span>
               </label>
 
-              <label className="flex items-center gap-2 cursor-pointer">
+              {/* <label className="flex items-center gap-2 cursor-pointer">
                 <input
                   type="radio"
                   value="ADMIN"
@@ -105,7 +105,7 @@ function Register() {
                   className="accent-blue-600 w-4 h-4"
                 />
                 <span className="text-sm">Admin</span>
-              </label>
+              </label> */}
             </div>
 
             {errors.role && <p className={errorClass}>{errors.role.message}</p>}
